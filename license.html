@@ -2,80 +2,192 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <title>FocusFlow – Webshop</title>
+  <title>FocusFlow – Lizenz</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .skip {
+      position: absolute;
+      left: -9999px;
+      z-index: 999;
+    }
+    .skip:focus {
+      left: 10px;
+      top: 10px;
+      background: #fff;
+      padding: 5px;
+      border: 2px solid #007acc;
+    }
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover, nav a:focus {
+      background-color: rgba(255,255,255,0.2);
+      outline: 2px solid white;
+      outline-offset: 2px;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      flex: 1;
+    }
+    h1 {
+      color: #007acc;
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    h2 {
+      color: #005a99;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    p, ul {
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    a {
+      color: #007acc;
+      text-decoration: underline;
+    }
+    a:hover, a:focus {
+      text-decoration: none;
+      outline: 2px solid #007acc;
+      outline-offset: 2px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+      }
+      main {
+        margin: 1rem;
+        padding: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
+  <a href="#main" class="skip">Zum Hauptinhalt springen</a>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Shop</a></li>
+        <li><a href="product.html">Produkt</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="accessibility.html">Barrierefreiheit</a></li>
+        <li><a href="privacy.html">Datenschutz</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<nav>
-  <a href="index.html">Shop</a> |
-  <a href="product.html">Produkt</a> |
-  <a href="about.html">About</a> |
-  <a href="accessibility.html">Barrierefreiheit</a> |
-  <a href="privacy.html">Datenschutz</a> |
-  <a href="impressum.html">Impressum</a>
-</nav>
+  <main id="main">
+    <h1>Lizenzbedingungen</h1>
 
-<main>
-  <h1>Lizenzbedingungen</h1>
+    <p>
+      Die nachfolgenden Lizenzbedingungen regeln die Nutzung der Software
+      <strong>FocusFlow</strong>. Diese Lizenzseite ist Teil eines
+      <strong>Übungsprojekts</strong>.
+    </p>
 
-  <p>
-    Die nachfolgenden Lizenzbedingungen regeln die Nutzung der Software
-    <strong>FocusFlow</strong>. Diese Lizenzseite ist Teil eines
-    <strong>Übungsprojekts</strong>.
-  </p>
+    <h2>1. Vertragsgegenstand</h2>
+    <p>
+      FocusFlow ist eine digitale Softwareanwendung, die über diesen Webshop
+      bereitgestellt wird. Durch den Erwerb einer Lizenz wird kein Eigentum
+      an der Software übertragen.
+    </p>
 
-  <h2>1. Vertragsgegenstand</h2>
-  <p>
-    FocusFlow ist eine digitale Softwareanwendung, die über diesen Webshop
-    bereitgestellt wird. Durch den Erwerb einer Lizenz wird kein Eigentum
-    an der Software übertragen.
-  </p>
+    <h2>2. Nutzungsrechte des Kunden</h2>
+    <p>
+      Mit dem Kauf der Software erhält der Kunde ein
+      <strong>einfaches, nicht übertragbares Nutzungsrecht</strong>.
+    </p>
+    <ul>
+      <li>Nutzung der Software für private und berufliche Zwecke</li>
+      <li>Nutzung auf einer begrenzten Anzahl von Endgeräten</li>
+      <li>Erstellung einer Sicherungskopie im gesetzlichen Rahmen</li>
+    </ul>
 
-  <h2>2. Nutzungsrechte des Kunden</h2>
-  <p>
-    Mit dem Kauf der Software erhält der Kunde ein
-    <strong>einfaches, nicht übertragbares Nutzungsrecht</strong>.
-  </p>
-  <ul>
-    <li>Nutzung der Software für private und berufliche Zwecke</li>
-    <li>Nutzung auf einer begrenzten Anzahl von Endgeräten</li>
-    <li>Erstellung einer Sicherungskopie im gesetzlichen Rahmen</li>
-  </ul>
+    <h2>3. Rechte des Unternehmens</h2>
+    <p>
+      Alle Urheber- und Verwertungsrechte an der Software, am Design,
+      an Texten und an der Marke verbleiben beim Anbieter.
+    </p>
 
-  <h2>3. Rechte des Unternehmens</h2>
-  <p>
-    Alle Urheber- und Verwertungsrechte an der Software, am Design,
-    an Texten und an der Marke verbleiben beim Anbieter.
-  </p>
+    <h2>4. Einschränkungen</h2>
+    <ul>
+      <li>Keine Weitergabe oder Unterlizenzierung an Dritte</li>
+      <li>Keine Vervielfältigung über den erlaubten Umfang hinaus</li>
+      <li>Keine Veränderung oder Dekompilierung der Software</li>
+    </ul>
 
-  <h2>4. Einschränkungen</h2>
-  <ul>
-    <li>Keine Weitergabe oder Unterlizenzierung an Dritte</li>
-    <li>Keine Vervielfältigung über den erlaubten Umfang hinaus</li>
-    <li>Keine Veränderung oder Dekompilierung der Software</li>
-  </ul>
+    <h2>5. Haftungsbeschränkung</h2>
+    <p>
+      Die Software wird in der vorliegenden Übung
+      <strong>„wie sie ist“ (AS IS)</strong> bereitgestellt.
+      Eine Haftung für Schäden, Datenverlust oder entgangenen Gewinn
+      ist – soweit gesetzlich zulässig – ausgeschlossen.
+    </p>
 
-  <h2>5. Haftungsbeschränkung</h2>
-  <p>
-    Die Software wird in der vorliegenden Übung
-    <strong>„wie sie ist“ (AS IS)</strong> bereitgestellt.
-    Eine Haftung für Schäden, Datenverlust oder entgangenen Gewinn
-    ist – soweit gesetzlich zulässig – ausgeschlossen.
-  </p>
+    <h2>6. Beendigung der Lizenz</h2>
+    <p>
+      Bei Verstoß gegen diese Lizenzbedingungen kann das Nutzungsrecht
+      mit sofortiger Wirkung entzogen werden.
+    </p>
 
-  <h2>6. Beendigung der Lizenz</h2>
-  <p>
-    Bei Verstoß gegen diese Lizenzbedingungen kann das Nutzungsrecht
-    mit sofortiger Wirkung entzogen werden.
-  </p>
+    <p>
+      <strong>Hinweis:</strong> Diese Lizenz stellt keine Rechtsberatung dar
+      und dient ausschließlich zu Übungszwecken.
+    </p>
 
-  <p>
-    <strong>Hinweis:</strong> Diese Lizenz stellt keine Rechtsberatung dar
-    und dient ausschließlich zu Übungszwecken.
-  </p>
+  </main>
 
-</main>
-
+  <footer>
+    <p>&copy; 2026 FocusFlow. Übungsprojekt</p>
+  </footer>
 </body>
 </html>
